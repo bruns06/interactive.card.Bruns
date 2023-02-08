@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Interactive card details form</title>
+  <script src="./script/main.js"></script>
+</head>
+<body>
+
+  <div class="box">
+    <div class="cards">
+    <div class="card1">
+      <div class="text-draw">
+      <div id="dNome" ></div>
+      <div id="dCognome"></div>
+      <div id="dMese"></div>
+      <div id="dAnno"></div>
+      
+    </div></div>
+    <div class="card2">
+      <div class="text-draw" id="dCVC"></div>
+    </div>
+
+    </div>
+
+  
+  
+  <div>
+      <form class="form" action="accepted.html"><label for="Name">Carholder</label>
+        <input class="inputs" oninput="dNome()" id="name" placeholder="Name Surname" type="text" maxlength="23" required>
+      <label for="CardNumber">Cardnumber</label>
+        <input class="inputs" oninput="getNumber()" pattern="[0-9]+/-[0-9]+/-[0-9]+/-[0-9]{4,4,4,4}$" type="text" id="number" maxlength="20" placeholder="xxxx-xxxx-xxxx-xxxx" required>
+      <div id="lastL">
+        <label for="Date-of-expire">Date of exp (MM/yy)</label>
+        <input class="inputs-date" oninput="getMonth()" id="month" maxlength="2" max="12" type="number" placeholder="mm" required>
+        <input id="yeare" class="inputs-date" oninput="getYear()" maxlength="2" max="40" name="Date-of-expire" type="number" placeholder="yy" required>
+      <label id="cVc" for="CVC">CVC</label>
+        <input class="inputs-cvc" oninput="getCVC()" id="cvc" type="number" maxlength="3" placeholder="123" name="CVC" required>
+      </div>
+        <input  class="submits" id="myBtn" type="submit" value="Confirm">
+      
+      </form>
+      </div>
+    </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Paolo Bruna</a>.
+  </div>
+</body>
+</html>
