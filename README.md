@@ -1,6 +1,6 @@
 # FrontendMentor interactive card challenge
 
-My own frontendMentor interactive card challenge, which would need a few fixes but looks cool.
+My own frontendMentor interactive card challenge, which would need a few fixes but ~~looks cool~~.
 
 [Click me](https://bruns06.github.io/interactive.card.Bruns/) to see the page.
 
